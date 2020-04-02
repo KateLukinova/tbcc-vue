@@ -2,30 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Template</title>
+    <title>TBCC</title>
   </head>
   <body>
     <div class="wrapper">
       <div id="app">
-        <header></header>
 
-        <div class="content-wrapper">
-
-          <!-- expamle section (remove me) -->
-          <section id="promo" style="text-align:center;">
-            <div class="container">
-              <h1>Webpack Template</h1>
-            </div>
-          </section>
-
-          <!-- expamle vue component -->
-          <example-component />
-        </div>
-
-        <footer></footer>
-      </div> <!-- end #app wrapper -->
-    </div> <!-- end main wrapper -->
+        <sidebar-nav v-if="this.$route.path !== '/' && this.$route.path !== '/login'&& this.$route.path !== '/register'"></sidebar-nav>
+        <main></main>
+        <router-view></router-view>
+      </div>
+    </div>
   </body>
 </html>
