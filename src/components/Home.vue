@@ -2,7 +2,7 @@
   <section class="home-section">
     <div class="header">
       <h2>Welcom, {{userName}}</h2>
-      <langSelect></langSelect>
+      <langSelect class="mobile-none"></langSelect>
     </div>
     <div class="text-center" v-if="noRegister">
       <h3>Вам необходимо пройти KYC</h3>
@@ -127,7 +127,20 @@ export default {
     width: 67%;
   }
   .place.sidebar {
-    width: 30%;
+    width: 100%;
     min-width: 360px;
+    max-width: 500px;
+    margin-left: 20px;
+  }
+  @media (max-width: 1200px) {
+    .home-content {
+      flex-direction: column-reverse;
+    }
+    .place {
+      width: 100%;
+    }
+    .place.sidebar {
+      margin-left: 0;
+    }
   }
 </style>

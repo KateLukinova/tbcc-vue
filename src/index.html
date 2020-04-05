@@ -9,7 +9,7 @@
   <body>
     <div class="wrapper">
       <div id="app">
-
+        <header-mobile v-if="this.$route.path !== '/' && this.$route.path !== '/login'&& this.$route.path !== '/register'"></header-mobile>
         <sidebar-nav v-if="this.$route.path !== '/' && this.$route.path !== '/login'&& this.$route.path !== '/register'"></sidebar-nav>
         <main></main>
         <router-view></router-view>

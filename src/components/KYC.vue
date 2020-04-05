@@ -2,7 +2,7 @@
   <section class="kyc-section">
     <div class="header">
       <h2>Welcom, {{userName}}</h2>
-      <langSelect></langSelect>
+      <langSelect class="mobile-none"></langSelect>
     </div>
     <div class="text-center" v-if="kycModerate">
       <h3>Ваше KYC на модерации</h3>
@@ -71,6 +71,11 @@ export default {
       margin: 30px 0;
       margin-bottom: 40px;
 
+    }
+  }
+  @media (max-width: 990px) {
+    .text-center {
+      margin-top: 100px;
     }
   }
 </style>

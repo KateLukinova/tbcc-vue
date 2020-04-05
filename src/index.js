@@ -15,12 +15,15 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter)
 Vue.use(vSelect)
 
+window.EventBus = new Vue();
+
 // Vue components (for use in html)
 const Main = Vue.component('Main', require('./components/Main.vue').default)
 const Login = Vue.component('Login', require('./components/Login.vue').default)
 const Register = Vue.component('Register', require('./components/Register.vue').default)
 const MFooter = Vue.component('MFooter', require('./components/MFooter.vue').default)
 const Home = Vue.component('Home', require('./components/Home.vue').default)
+const HeaderMobile = Vue.component('HeaderMobile', require('./components/HeaderMobile.vue').default)
 const KYC = Vue.component('KYC', require('./components/KYC.vue').default)
 const LangSelect = Vue.component('LangSelect', require('./components/LangSelect.vue').default)
 const PriceChartItem = Vue.component('PriceChartItem', require('./components/PriceChartItem.vue').default)
