@@ -1,6 +1,6 @@
 <template>
   <div class="main-wrapper">
-    <header class="container-fluid">
+    <header class="container-fluid header-main">
               <div class="main-container header-top">
                 <router-link to="/login" class="download-button">
                   <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,9 +31,9 @@
                   <h1>Cryptocurrency Card APP</h1>
                   <h2>Manage your Bitcoin, Ethereum, USDT, Litecoin</h2>
                   <div class="icon-box">
-                    <img src="../assets/img/ios.png" alt="">
-                    <img src="../assets/img/android.png" alt="">
-                    <img src="../assets/img/android6.png" alt="">
+                    <a href="#"><img src="../assets/img/ios.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/android.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/android6.png" alt=""></a>
                   </div>
                 </div>
               </div>

@@ -116,7 +116,7 @@ export default {
   .main-menu {
     background: #00312B;
     border: 1px solid #006B5E;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom:0;
     height: 100vh;
