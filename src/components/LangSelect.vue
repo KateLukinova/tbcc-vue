@@ -33,6 +33,7 @@
 <style lang="scss">
   .my-v-select {
     width: 50px!important;
+    height: max-content!important;
     .up.input-control::after, .down.input-control::after {
       content: none;
     }

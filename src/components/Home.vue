@@ -143,4 +143,9 @@ export default {
       margin-left: 0;
     }
   }
+  @media (max-width: 480px) {
+    .place.sidebar {
+      min-width: 100%;
+    }
+  }
 </style>

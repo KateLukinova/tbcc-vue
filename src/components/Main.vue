@@ -31,9 +31,9 @@
                   <h1>Cryptocurrency Card APP</h1>
                   <h2>Manage your Bitcoin, Ethereum, USDT, Litecoin</h2>
                   <div class="icon-box">
-                    <a href="#"><img src="../assets/img/ios.png" alt=""></a>
-                    <a href="#"><img src="../assets/img/android.png" alt=""></a>
-                    <a href="#"><img src="../assets/img/android6.png" alt=""></a>
+                    <a href="https://wallet.cards-tbcc.online/tbcc_wallet.apk"><img src="../assets/img/ios.png" alt=""></a>
+                    <a href="https://wallet.cards-tbcc.online/tbcc_wallet.apk"><img src="../assets/img/android.png" alt=""></a>
+                    <a href="https://wallet.cards-tbcc.online/tbcc_wallet.apk"><img src="../assets/img/android6.png" alt=""></a>
                   </div>
                 </div>
               </div>

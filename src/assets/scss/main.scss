@@ -232,6 +232,32 @@ h2 {
   color: #28AA9A;
   margin: 15px 0 20px 0;
 }
+.attention {
+  background: rgba(252, 26, 80, 0.1);
+  border: 1px solid rgba(252, 26, 80, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 35px;
+  .caption {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FC1A50;
+    margin-bottom: 15px;
+  }
+  p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #102724;
+  }
+}
 
 
 

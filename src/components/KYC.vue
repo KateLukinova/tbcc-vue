@@ -750,19 +750,34 @@
         </div>
       </form>
     </div>
+
     <div class="text-center" v-if="kycModerate">
       <h3>Ваше KYC на модерации</h3>
       <p>После одобрения данных вы получите полный доступ к системе.</p>
     </div>
+
     <div class="text-center" v-else-if="kycError">
       <h3 class="error">Ваше KYC требует внимания</h3>
       <p>При проверке KYC были найдены ошибки. Исправьте их и отправьте данные на проверку повторно.</p>
       <router-link to="/kyc" class="button-primary">Исправить</router-link>
     </div>
+
     <div class="text-center" v-else-if="kycFinish">
       <h3 class="check">KYC пройдено!</h3>
       <p>Поздравляем! Теперь вы можете пользоваться всеми функциями системы.</p>
       <router-link to="/kyc" class="button-primary">Начать</router-link>
+    </div>
+
+    <div class="attention">
+      <div class="caption">
+        All applications are processed in work time from 8:00 to 17:00 UTC+8
+      </div>
+      <p>
+        Please use ID (Document Type) only if you a Chinese or Hong-Kong Citizen. Citizens of all other countries must use their international passport to complete the KYC procedure.
+      </p>
+      <p>
+        We are very sorry but those countries passports can not be accepted for KYC procedure - Cuba, Iran, North Korea, Sudan, Syria, Iraq, Liberia, Zimbabwe, Crimea.
+      </p>
     </div>
   </section>
 </template>
@@ -1011,6 +1026,20 @@ export default {
   @media (max-width: 990px) {
     .text-center {
       margin-top: 100px;
+    }
+    .place.form {
+      padding: 20px;
+      .form-row {
+        flex-direction: column;
+        margin-bottom: 0;
+        .input-box {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .form-column {
+          width: 100%;
+        }
+      }
     }
   }
 </style>
