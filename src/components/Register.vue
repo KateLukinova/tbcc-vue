@@ -18,7 +18,7 @@
       </div>
       <button class="form-button" type="submit">Создать учетную запись</button>
       <div class="form-question">Уже есть учетная запись в системе?</div>
-      <p><router-link to="/login">Войти в систему </router-link>в свою учетную запись с системе Coinbase или
+      <p><router-link to="/login">Войти в систему </router-link> или
         <a href="#">Регистрация</a> как юридическое лицо.</p>
     </form>
   </div>

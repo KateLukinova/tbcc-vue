@@ -12,6 +12,9 @@ window.Vue = require('vue')
 import vSelect from 'vselect-component'
 import VueRouter from "vue-router";
 import VueMask from 'v-mask'
+import { VuejsDatatableFactory } from 'vuejs-datatable';
+
+Vue.use( VuejsDatatableFactory );
 Vue.use(VueMask);
 Vue.use(VueRouter)
 Vue.use(vSelect)

@@ -74,7 +74,8 @@ section,
   background-color: #F8FFFE;
   width: auto;
   min-width: calc(100% - 180px);
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   margin-left: 180px;
   padding: 40px 2%;
   box-sizing: border-box;
@@ -131,8 +132,26 @@ h2 {
   line-height: 17px;
   color: #006B5E;
   margin-top: 20px;
+  transition: all 0.5s ease;
   svg {
     margin-right: 10px;
+    path {
+      fill: #006B5E;
+    }
+  }
+  &:hover {
+    color: #009885;
+    border: 0.5px solid #009885;
+  }
+  &:focus {
+    color: white;
+    border: 0.5px solid #28AA9A;
+    background-color: #28AA9A;
+    svg {
+      path {
+        fill: white;
+      }
+    }
   }
 }
 .wrapper {
@@ -258,7 +277,19 @@ h2 {
     color: #102724;
   }
 }
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+}
 
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+}
 
 
 //index.html
@@ -318,6 +349,7 @@ h3 {
   align-items: center;
   width: 100%;
   height: auto;
+  z-index: 50;
   .header-top {
     width: 100%;
     height: 110px;

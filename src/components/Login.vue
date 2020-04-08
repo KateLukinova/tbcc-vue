@@ -12,8 +12,9 @@
 <!--      временная мера-->
       <router-link to="/home" class="form-button" type="submit">Создать учетную запись</router-link>
       <div class="form-question">Впервые в системе?</div>
-      <p>Пройдите быструю регистрацию с системе <a href="#">Coinbase</a> или
-        <router-link to="/register">Регистрация</router-link> как юридическое лицо.</p>
+      <p>Пройдите быструю регистрацию в системе
+        <router-link to="/register">Регистрация</router-link>
+      </p>
     </form>
   </div>
 </template>
