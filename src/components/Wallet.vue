@@ -131,7 +131,7 @@
           </thead>
           <tbody>
           <tr v-for="row in paginatedRows">
-            <td v-for="(column, index) in row" :class="index === 9 ? getStatusClass(column) : ''">
+            <td v-for="(column, index) in row" :class="index === 7 ? getStatusClass(column) : ''">
               {{ column }}
             </td>
           </tr>
@@ -154,7 +154,7 @@
       </div>
       <div class="pagination-table-box">
 
-        <button class="pagination-button prev" @click="currentPage--">
+        <button class="pagination-button prev" @click="prevPageTable">
           <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1L1 8L8 15" stroke="#006B5E"/>
           </svg>
@@ -166,7 +166,7 @@
           </li>
         </ul>
 
-        <button class="pagination-button next" @click="currentPage++">
+        <button class="pagination-button next" @click="nextPageTable">
           <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 15L8 8L1 0.999999" stroke="#006B5E"/>
           </svg>
@@ -236,22 +236,21 @@ export default {
     }
   },
   methods: {
-    // sortColumn(column) {
-    // 	if (column === this.sort.sortColumn) {
-    // 		this.sort.desc = !this.sort.desc;
-    // 	} else {
-    // 		this.sort.sortColumn = column;
-    // 		this.sort.desc = true;
-    // 	}
-    // },
+    prevPageTable() {
+      if (this.table.currentPage > 1) {
+        this.table.currentPage--
+      }
+    },
+    nextPageTable() {
+      if (this.table.currentPage < this.pagination) {
+        this.table.currentPage++
+      }
+    },
 
     resetCurrentPage() {
       this.table.currentPage = 1;
     },
 
-    // Helpers. No acceden al modelo
-
-    // retorna las filas ordenas por una columna
     sortRows(rows, columnIndex) {
       var nRows = [];
       var colIsString = false;
@@ -279,7 +278,14 @@ export default {
 
       return nRows;
     },
-
+    getStatusClass(status) {
+      switch (status) {
+        case 'OK': return 'status-ok';
+        case 'NO': return 'status-no';
+        case 'Processing': return 'status-processing';
+        default: return '';
+      }
+    },
     filterRows(rows, textFilter, sortColumn) {
       if (textFilter != "") {
         rows = rows.filter((row) => {
@@ -337,17 +343,6 @@ export default {
         this.table.rowsPerPage,
         this.table.currentPage
       );
-    },
-    getStatusClass(status) {
-      switch (status) {
-        case 'OK': return 'status-ok';
-          break;
-        case 'NO': return 'status-no';
-          break;
-        case 'Processing': return 'status-processing';
-          break;
-
-      }
     },
     filteredRows() {
       track("filtered rows");
@@ -504,6 +499,12 @@ export default {
         min-width: 100px;
         text-align: center;
         padding-bottom: 24px;
+        &:nth-child(2n+3) {
+          font-family: 'Montserrat-Bold', sans-serif;
+        }
+        a {
+          color: #111111;
+        }
       }
     }
     td {
@@ -610,6 +611,21 @@ export default {
         max-height: 42px;
         min-width: 42px;
         cursor: pointer;
+        &:nth-child(n+3) {
+          display: none;
+        }
+        &:nth-last-child(1) {
+          display: flex;
+        }
+        &:nth-child(2) {
+          position: relative;
+          margin-right: 60px;
+          &::after {
+            content: '...';
+            position: absolute;
+            right: -35px;
+          }
+        }
         div {
           color: #006B5E;
         }
