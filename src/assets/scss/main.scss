@@ -458,6 +458,48 @@ button {
   cursor: pointer;
 }
 
+ul.vuejs-countdown {
+  display: flex;
+  li {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 231, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 3.5%;
+    min-width: 95px;
+    max-height: 80px;
+    &:after {
+      display: none;
+    }
+    p.text {
+      font-family: 'Montserrat-Regular', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: #797979;
+      text-transform: capitalize;
+    }
+    p.digit {
+      font-family: 'Montserrat-Bold', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: 0.03em;
+      color: #333333;
+    }
+  }
+}
+
+
 @media (max-width: 1366px) {
   h1 {
     font-size: 45px;

@@ -39,12 +39,12 @@
 
       </li>
       <li>
-        <a href="home.html" class="sidebar-menu__item">
+        <router-link to="/staking" class="sidebar-menu__item">
           <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M26 10.0815L17.017 8.77662L13 0.636993L8.983 8.77662L0 10.0815L6.5 16.4174L4.966 25.363L13 21.1396L21.034 25.363L19.5 16.4174L26 10.0815Z"/>
           </svg>
           <span class="nav-text">Staking</span>
-        </a>
+        </router-link>
       </li>
     </ul>
 
@@ -60,7 +60,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/home" class="sidebar-menu__item" v-on:click.native="toggleNav">
+        <router-link to="/settings" class="sidebar-menu__item" v-on:click.native="toggleNav">
           <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M23.7087 15.4944C22.3454 13.1316 23.1644 10.1042 25.5401 8.72787L22.9856 4.303C22.256 4.73037 21.4061 4.97575 20.501 4.97575C17.771 4.97575 15.5577 2.74787 15.5577 0H10.4471C10.4536 0.84825 10.2424 1.70787 9.78735 2.49437C8.42398 4.85712 5.3901 5.65987 3.0111 4.29163L0.456604 8.7165C1.19273 9.13412 1.82973 9.74675 2.28148 10.5316C3.64323 12.8911 2.82748 15.912 0.461479 17.2916L3.01598 21.7165C3.74398 21.2924 4.58735 21.0503 5.48923 21.0503C8.2111 21.0503 10.4179 23.2635 10.4325 26H15.5431C15.5415 25.1599 15.7527 24.31 16.2029 23.5316C17.5646 21.1721 20.5904 20.3678 22.9677 21.7279L25.5222 17.303C24.791 16.8854 24.1589 16.2744 23.7087 15.4944ZM13 18.265C10.0929 18.265 7.73498 15.9087 7.73498 13C7.73498 10.0913 10.0912 7.735 13 7.735C15.9071 7.735 18.265 10.0913 18.265 13C18.265 15.9087 15.9087 18.265 13 18.265Z" fill="white" fill-opacity="0.5"/>
           </svg>
@@ -83,6 +83,7 @@ export default {
   methods: {
     toggleNav: function() {
       console.log('fgdfg')
+      EventBus.$emit('MENU_ITEM_CLICKED');
       this.open = !this.open
     }
   },
@@ -132,7 +133,7 @@ export default {
     align-items: center;
     .logo {
       width: 45%;
-      height: 250px;
+      height: 23vh;
       max-width: 140px;
       align-items: flex-start;
       transition: all 0.5s ease;
@@ -175,7 +176,7 @@ export default {
     position:relative;
     display: flex;
     width: max-content;
-    margin-bottom: 40px;
+    margin-bottom: 3vh;
   }
 
   .main-menu .nav-text {

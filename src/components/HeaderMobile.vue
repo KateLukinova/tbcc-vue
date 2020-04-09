@@ -26,6 +26,11 @@ export default {
       this.open = !this.open
       EventBus.$emit('MENU_CLICKED', this.open);
     }
+  },
+  mounted() {
+    EventBus.$on('MENU_ITEM_CLICKED', () => {
+      this.open = false;
+    });
   }
 };
 </script>

@@ -30,12 +30,15 @@ const Home = Vue.component('Home', require('./components/Home.vue').default)
 const Card = Vue.component('Card', require('./components/Card.vue').default)
 const HeaderMobile = Vue.component('HeaderMobile', require('./components/HeaderMobile.vue').default)
 const KYC = Vue.component('KYC', require('./components/KYC.vue').default)
+const Settings = Vue.component('Settings', require('./components/Settings.vue').default)
+const Staking = Vue.component('Staking', require('./components/Staking.vue').default)
 const LangSelect = Vue.component('LangSelect', require('./components/LangSelect.vue').default)
 const PriceChartItem = Vue.component('PriceChartItem', require('./components/PriceChartItem.vue').default)
 const SidebarNav = Vue.component('SidebarNav', require('./components/SidebarNav.vue').default)
 const BuyToken = Vue.component('BuyToken', require('./components/BuyToken.vue').default)
 const Wallet = Vue.component('Wallet', require('./components/Wallet.vue').default)
 const AccountComponent = Vue.component('BuyToken', require('./components/AccountComponent.vue').default)
+
 
 const routes = [
   { path: '/', component: Main },
@@ -45,7 +48,9 @@ const routes = [
   { path: '/login', component: Login },
   { path: '/register', component: Register },
   { path: '/wallet', component: Wallet },
-  { path: '/card', component: Card }
+  { path: '/card', component: Card },
+  { path: '/settings', component: Settings },
+  { path: '/staking', component: Staking }
 ]
 
 const router = new VueRouter({
