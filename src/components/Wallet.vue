@@ -51,7 +51,7 @@
             </svg>
             График портфеля
           </a>
-          <a href="#" class="button-light">
+          <a href="#" class="button-light" @click="showModalWalletForm = true">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10.5 1.75H8.75C8.5085 1.75 8.3125 1.946 8.3125 2.1875C8.3125 2.429 8.5085 2.625 8.75 2.625H10.5C10.9826 2.625 11.375 3.01744 11.375 3.5V10.5C11.375 10.9826 10.9826 11.375 10.5 11.375H3.5C3.01744 11.375 2.625 10.9826 2.625 10.5V3.5C2.625 3.01744 3.01744 2.625 3.5 2.625H5.25C5.4915 2.625 5.6875 2.429 5.6875 2.1875C5.6875 1.946 5.4915 1.75 5.25 1.75H3.5C2.53509 1.75 1.75 2.53509 1.75 3.5V10.5C1.75 11.4649 2.53509 12.25 3.5 12.25H10.5C11.4649 12.25 12.25 11.4649 12.25 10.5V3.5C12.25 2.53509 11.4649 1.75 10.5 1.75Z"/>
               <path d="M6.56248 9.00638L5.55929 8.00319C5.38844 7.83234 5.11151 7.83234 4.94066 8.00319C4.76982 8.17403 4.76982 8.45097 4.94066 8.62181L6.69066 10.3718C6.77619 10.4573 6.88798 10.5 6.99998 10.5C7.11198 10.5 7.22376 10.4573 7.30929 10.3718L9.05929 8.62181C9.23013 8.45097 9.23013 8.17403 9.05929 8.00319C8.88844 7.83234 8.61151 7.83234 8.44066 8.00319L7.43748 9.00638V3.9375C7.43748 3.696 7.24148 3.5 6.99998 3.5C6.75848 3.5 6.56248 3.696 6.56248 3.9375V9.00638Z"/>
@@ -175,6 +175,67 @@
       </div>
     </div>
 
+
+
+
+    <!--      wallet form-->
+
+    <div class="overlay" v-bind:class="{ active: showModalWalletForm }" @click="showModalWalletForm = false">
+      <div class="modal" v-if="showModalWalletForm">
+        <button class="modal-close" @click="showModalWalletForm = false">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 1L16 15.5" stroke="#006B5E"/>
+            <path d="M15.5 1L0.999999 15.5" stroke="#006B5E"/>
+          </svg>
+        </button>
+        <div class="form-caption">Отправить TBC</div>
+        <form action="#" class="modal-form">
+          <div class="form-row">
+            <div class="input-box input-box-select">
+              <label for="select-btc">Валюта</label>
+              <select name="select-btc" class="select-btc" id="select-btc">
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="USDT">USDT</option>
+              </select>
+            </div>
+            <div class="input-box input-box-where-from">
+              <label for="where-from-btc">Откуда</label>
+              <select name="where-from-btc" class="where-from-btc" id="where-from-btc">
+                <option value="Мой (1.4545741 BTC)">Мой (1.4545741 BTC)</option>
+                <option value="Мой (1.4545741 BTC)">Мой (1.4545741 BTC)</option>
+                <option value="Мой (1.4545741 BTC)">Мой (1.4545741 BTC)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-box input-box-where-to">
+              <label for="where-to-btc">Куда</label>
+              <input type="text" placeholder="Вставь или отсканируй" id="where-to-btc">
+            </div>
+            <div class="qr">
+              <img src="../assets/img/qr.png" alt="">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-box input-box-amount">
+              <label for="amount">Сумма</label>
+              <input type="text" value="21339.45 USD" id="amount">
+            </div>
+            <span class="equally">=</span>
+            <div class="input-box input-box-amount">
+              <label for="amount-btc">Куда</label>
+              <input type="text" value="3 BTC" id="amount-btc">
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment"></textarea>
+          </div>
+          <div class="button-primary button-modal">ok</div>
+        </form>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -201,6 +262,7 @@ export default {
   data() {
     return {
       activetab: '1',
+      showModalWalletForm: false,
       table: {
         currentPage: 1,
         rowsPerPage: 10,
@@ -680,6 +742,15 @@ export default {
         color: rgba(0, 107, 94, 0.7);
       }
     }
+    label {
+      font-family: 'Montserrat-Regular', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #818181;
+      margin-bottom: 7px;
+    }
   }
   .wallet-address {
     position: relative;
@@ -695,6 +766,133 @@ export default {
       top: 65px;
       transform: translateY(-50%);
     }
+  }
+
+
+  .overlay {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 107, 94, 0.8);
+    display: none;
+    &.active {
+      display: flex;
+    }
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: scroll;
+    z-index: 9999;
+    padding: 20px 30px;
+    background-color: #fff;
+    border: 1px solid rgba(40, 170, 154, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 107, 94, 0.05);
+    border-radius: 10px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+  }
+
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qr {
+    width: 134px;
+    margin-bottom: 40px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .form-caption {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    color: #102724;
+    margin: 40px 0;
+  }
+
+  .input-box {
+    width: 100%;
+    margin-bottom: 40px;
+    max-width: none;
+    input, select, textarea {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #006B5E;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-family: 'Montserrat-Regular', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: rgba(0, 107, 94, 0.7);
+      padding: 20px 30px;
+      &::placeholder {
+        color: rgba(0, 107, 94, 0.7);
+      }
+    }
+  }
+  .form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .input-box-select {
+      width: 25%;
+    }
+    .input-box-where-from {
+      width: 70%;
+    }
+  }
+  .input-box-where-to {
+    width: calc(100% - 100px);
+  }
+  .qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 65px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #006B5E;
+  }
+  .input-box-amount {
+    width: 45%;
+  }
+  .equally {
+    height: 86px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   @media (max-width: 1360px) {
     .tabs a {
@@ -748,6 +946,21 @@ export default {
       }
       span {
         font-size: 18px;
+      }
+    }
+
+    .form-row {
+      flex-direction: column;
+      .input-box-select {
+        width: 100%;
+        min-width: 150px;
+      }
+      .input-box-where-from, .input-box-where-to, .input-box-amount {
+        width: 100%;
+      }
+      .equally {
+        margin-bottom: 0;
+        height: 10px;
       }
     }
   }

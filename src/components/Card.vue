@@ -2,7 +2,7 @@
   <section class="card-section">
     <div class="header">
       <h2>Card</h2>
-      <accountComponent></accountComponent>
+      <langSelect class="mobile-none"></langSelect>
     </div>
     <div class="card-wrapper">
       <div class="card-item active">
@@ -88,14 +88,9 @@
 </template>
 
 <script>
-  import accountComponent from '~/components/AccountComponent.vue'
   import { VueMaskDirective } from 'v-mask'
   Vue.directive('mask', VueMaskDirective);
 export default {
-
-  components: {
-    accountComponent
-  },
 
   data() {
     return {
