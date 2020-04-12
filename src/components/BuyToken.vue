@@ -73,6 +73,12 @@
           <li><div class="number"><span>3</span></div><p>Лотерея 14-03-2020</p></li>
           <li><div class="number"><span>4</span></div><p>Анонс результатов 14-03-2020</p></li>
         </ul>
+        <div class="lottery-text">
+          <p>Уведомление о выигрышных билетах - Если у вас есть выигрышный билет, TBCC спишет соответствующее количество TBC с вашего счета.</p>
+          <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2929 7.35355H0V6.35355H19.2929L13.6464 0.707107L14.3536 0L20.8536 6.5L21.2071 6.85355L20.8536 7.20711L14.3536 13.7071L13.6464 13L19.2929 7.35355Z" fill="#00E7FF"/>
+          </svg>
+        </div>
       </div>
       <div class="place">
         <div class="place-item-top">
@@ -117,6 +123,145 @@
               17390, 59413,
               86281, 75210
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bay-token-content">
+      <div class="caption">Ключевые преимущества и характеристики</div>
+      <div class="icon-box">
+        <a href="#">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="22" height="22" rx="11" fill="#28AA9A" fill-opacity="0.3"/>
+            <path d="M11.7345 18.3333V11.6432H13.9801L14.3163 9.0359H11.7345V7.37124C11.7345 6.61639 11.9441 6.10191 13.0267 6.10191L14.4073 6.10128V3.76937C14.1684 3.73771 13.3489 3.66675 12.3955 3.66675C10.4049 3.66675 9.04209 4.88175 9.04209 7.11315V9.03597H6.79065V11.6432H9.04202V18.3334L11.7345 18.3333Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="22" height="22" rx="11" fill="#28AA9A" fill-opacity="0.3"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4454 16.4471C14.2142 16.7834 14.5026 16.0787 14.5026 16.0787L16.5368 5.85924C16.5208 5.17047 15.5918 5.58694 15.5918 5.58694L4.20305 10.0559C4.20305 10.0559 3.65844 10.2481 3.70649 10.5845C3.75455 10.9209 4.18703 11.0811 4.18703 11.0811L7.05423 12.0421C7.05423 12.0421 7.9192 14.8773 8.0954 15.4219C8.25557 15.9505 8.39974 15.9665 8.39974 15.9665C8.55992 16.0306 8.70408 15.9185 8.70408 15.9185L10.5622 14.2366L13.4454 16.4471ZM13.9419 7.66928C13.9419 7.66928 14.3424 7.42901 14.3264 7.66928C14.3264 7.66928 14.3904 7.70132 14.1822 7.92557C13.99 8.11778 9.45692 12.1863 8.84824 12.7309C8.80019 12.763 8.76815 12.811 8.76815 12.8751L8.59195 14.3808C8.55992 14.541 8.35169 14.557 8.30363 14.4128L7.55079 11.9461C7.51875 11.85 7.55079 11.7378 7.6469 11.6738L13.9419 7.66928Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="22" height="22" rx="11" fill="#28AA9A" fill-opacity="0.3"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9968 7.57831C18.0988 7.23838 17.9968 6.98853 17.5115 6.98853H15.907C15.499 6.98853 15.311 7.20434 15.209 7.44238C15.209 7.44238 14.393 9.43121 13.237 10.7231C12.8631 11.0971 12.6931 11.2159 12.4891 11.2159C12.3871 11.2159 12.2395 11.0971 12.2395 10.7571V7.57831C12.2395 7.1703 12.1211 6.98853 11.781 6.98853H9.2596C9.0047 6.98853 8.85136 7.17786 8.85136 7.35734C8.85136 7.74415 9.42922 7.83332 9.48882 8.9212V11.2841C9.48882 11.8021 9.3953 11.8961 9.19129 11.8961C8.64735 11.8961 7.32429 9.89825 6.53944 7.61235C6.38564 7.168 6.23137 6.98853 5.8213 6.98853H4.21675C3.75831 6.98853 3.66663 7.20434 3.66663 7.44238C3.66663 7.86736 4.21068 9.97527 6.19951 12.763C7.52555 14.6667 9.39346 15.6989 11.0934 15.6989C12.1134 15.6989 12.2395 15.4697 12.2395 15.0748V13.6359C12.2395 13.1775 12.3361 13.086 12.6589 13.086C12.8971 13.086 13.305 13.205 14.2571 14.1229C15.3449 15.2107 15.5242 15.6989 16.1362 15.6989H17.7407C18.1992 15.6989 18.4284 15.4697 18.2961 15.0173C18.1515 14.5664 17.6321 13.9125 16.9428 13.137C16.5689 12.695 16.0078 12.219 15.838 11.9811C15.5999 11.675 15.6679 11.5391 15.838 11.2673C15.838 11.2673 17.7928 8.51341 17.9968 7.57842V7.57831Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="22" height="22" rx="11" fill="#28AA9A" fill-opacity="0.3"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4019 21.4632C13.3305 21.8117 12.1871 22.0001 11 22.0001C9.81202 22.0001 8.66786 21.8114 7.59583 21.4625C8.09104 21.5219 8.27403 21.1995 8.27403 20.9211C8.27403 20.7999 8.27197 20.5861 8.2692 20.3002C8.266 19.9693 8.26186 19.5418 8.25891 19.0491C5.19885 19.7143 4.55328 17.5734 4.55328 17.5734C4.05347 16.3021 3.33228 15.9635 3.33228 15.9635C2.33335 15.2803 3.40791 15.2942 3.40791 15.2942C4.51135 15.372 5.09228 16.4287 5.09228 16.4287C6.07403 18.1108 7.66697 17.6251 8.29397 17.343C8.39366 16.6317 8.67828 16.1465 8.99247 15.8714C6.54978 15.5935 3.98197 14.6496 3.98197 10.4316C3.98197 9.22965 4.41028 8.24732 5.11428 7.47743C5.00085 7.19887 4.62341 6.08018 5.22153 4.56455C5.22153 4.56455 6.14553 4.26869 8.24653 5.69284C9.12447 5.44854 10.065 5.32691 11.0007 5.32194C11.935 5.32674 12.8762 5.44854 13.7548 5.69284C15.8544 4.26869 16.7763 4.56455 16.7763 4.56455C17.3765 6.08018 16.9991 7.19887 16.8857 7.47743C17.591 8.24732 18.0166 9.22965 18.0166 10.4316C18.0166 14.6598 15.4447 15.5908 12.9944 15.8632C13.389 16.203 13.741 16.8744 13.741 17.9016C13.741 18.8857 13.7349 19.7423 13.7308 20.3099C13.7288 20.5912 13.7273 20.8015 13.7273 20.9212C13.7273 21.2009 13.9059 21.524 14.4019 21.4632Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="22" height="22" rx="11" fill="#28AA9A" fill-opacity="0.3"/>
+            <path d="M16.3912 8.62231C16.3912 8.74263 16.3912 8.86294 16.3912 8.96606C16.3912 12.5239 13.6756 16.6317 8.72556 16.6317C7.19587 16.6317 5.7865 16.1848 4.58337 15.4286C4.78962 15.4458 5.01306 15.4629 5.21931 15.4629C6.474 15.4629 7.64275 15.0333 8.57087 14.3114C7.38494 14.2942 6.38806 13.5036 6.0615 12.4379C6.23337 12.4723 6.38806 12.4895 6.57712 12.4895C6.81775 12.4895 7.05837 12.4551 7.28181 12.3864C6.04431 12.1458 5.11619 11.0629 5.11619 9.75669C5.11619 9.7395 5.11619 9.7395 5.11619 9.72231C5.47712 9.92856 5.88962 10.0489 6.3365 10.0661C5.61462 9.58481 5.13337 8.75981 5.13337 7.8145C5.13337 7.31606 5.27087 6.852 5.49431 6.45669C6.81775 8.0895 8.8115 9.15513 11.0459 9.27544C10.9943 9.08638 10.9771 8.86294 10.9771 8.65669C10.9771 7.16138 12.1802 5.95825 13.6756 5.95825C14.449 5.95825 15.1537 6.28481 15.6349 6.80044C16.2537 6.68013 16.8209 6.45669 17.3537 6.14731C17.1474 6.78325 16.7177 7.29888 16.1677 7.64263C16.7177 7.57388 17.2334 7.43638 17.7146 7.21294C17.3709 7.76294 16.924 8.24419 16.3912 8.62231Z" fill="white"/>
+          </svg>
+        </a>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet aliquet nulla ut sed. Aliquam placerat ullamcorper ornare malesuada vitae a sagittis porta. Commodo sagittis fames pulvinar lobortis amet posuere velit. Lacus, ullamcorper eget tempus ipsum, eget imperdiet cras quam blandit. Leo sed etiam egestas eget. Sem ornare cras ipsum nulla volutpat in et. Ultrices lacus posuere vulputate nunc nisi, nisl.
+        Ac posuere quis elit ac sit posuere in aliquet lorem. In blandit nibh ipsum a metus. Viverra ut sed faucibus cursus integer porttitor. Euismod phasellus curabitur ut adipiscing lectus. Ipsum fermentum massa sit dolor gravida faucibus donec ornare. Elit hac eu bibendum sit et. Dolor.
+      </p>
+      <div class="caption">
+        Продажа токенов TBC и экономика
+      </div>
+      <div class="info-table">
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Общее количество токенов
+          </div>
+          <div class="item-table-value">
+            10 000 000 000 TROY
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Цена токена в рамках
+          </div>
+          <div class="item-table-value">
+            12,9% от общего количества токенов
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Первоначальный оборот
+          </div>
+          <div class="item-table-value">
+            0,005 USD (определение в день публичной продажи)
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Количество токенов к продаже на Launchpad
+          </div>
+          <div class="item-table-value">
+            800 000 000 TROY (8% от общего кол-ва)
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Максимальное количество выигрышных билетов
+          </div>
+          <div class="item-table-value">
+            20000
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Аллокация на выигрышный билет
+          </div>
+          <div class="item-table-value">
+            200 USD (40,000 TROY)
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Период вестинга при публичной продаже
+          </div>
+          <div class="item-table-value">
+            Нет локапа
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Цена токена на приватном раунде
+          </div>
+          <div class="item-table-value">
+            1 TROY = 0,007 USD
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Аллокация на приватном раунде
+          </div>
+          <div class="item-table-value">
+            12% от общего количества
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Период вестинга при приватной продаже
+          </div>
+          <div class="item-table-value">
+            Квартальная разблокировка через год
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Тип токена
+          </div>
+          <div class="item-table-value">
+            BEP2
+          </div>
+        </div>
+        <div class="info-table__row">
+          <div class="item-table-name">
+            Распределение токенов
+          </div>
+          <div class="item-table-value">
+            В течение 15 дней после окончания продажи токенов
           </div>
         </div>
       </div>
@@ -239,6 +384,7 @@ export default {
     color: #102724;
     margin: 0 20px;
     margin-left: 0;
+    min-width: 120px;
     span {
       font-family: 'Montserrat-Regular', sans-serif;
       font-style: normal;
@@ -254,14 +400,16 @@ export default {
   }
   .lottery-box {
     display: flex;
+    justify-content: space-between;
     .timeline {
-      width: 50%;
+      width: 45%;
     }
     .place {
       width: 50%;
       flex-direction: column;
       .place-item-top {
         display: flex;
+        justify-content: space-between;
         .button-primary {
           max-width: 140px;
           max-height: 48px;
@@ -288,22 +436,22 @@ export default {
       }
     }
   }
+  .caption {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #00312B;
+    margin-bottom: 30px;
+  }
   .timeline {
     display: flex;
     flex-direction: column;
     padding-right: 20px;
     box-sizing: border-box;
-    .caption {
-      font-family: 'Montserrat-Bold', sans-serif;
-      font-style: normal;
-      font-size: 16px;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.03em;
-      color: #00312B;
-      margin-bottom: 30px;
-    }
   }
   .ul-step {
     position: relative;
@@ -356,7 +504,7 @@ export default {
         font-family: 'Montserrat-Regular', sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 17px;
         display: flex;
         justify-content: center;
@@ -379,6 +527,96 @@ export default {
       border-radius: 50px;
     }
   }
+  .lottery-text {
+    position: relative;
+    background: rgba(0, 231, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #102724;
+    margin-top: 20px;
+    p {
+      margin-right: 15px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: 40px;
+      top: 0;
+      transform: translateY(-100%);
+      border: 5px solid transparent;
+      border-bottom: 7px solid rgba(0, 231, 255, 0.05);
+    }
+  }
+  .bay-token-content {
+    max-width: 760px;
+    width: 100%;
+    .icon-box {
+      justify-content: flex-start;
+      padding-left: 0;
+      margin-bottom: 30px;
+      a {
+        width: max-content;
+        min-width: max-content;
+        margin-left: 0;
+      }
+    }
+    p {
+      font-family: 'Montserrat-Regular', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+    }
+  }
+  .info-table {
+    display: flex;
+    flex-direction: column;
+    .info-table__row {
+      display: flex;
+      .item-table-name {
+        width: 49%;
+        margin-right: 20px;
+        font-family: 'Montserrat-Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.5);
+        padding-left: 10px;
+        box-sizing: border-box;
+      }
+      .item-table-value {
+        width: 50%;
+        font-family: 'Montserrat-Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.8);
+        padding-left: 10px;
+      }
+      &:nth-child(2n) {
+        background-color: rgba(40, 170, 154, 0.05);
+      }
+    }
+  }
 
   @media (max-width: 1200px) {
     .place {
@@ -391,6 +629,25 @@ export default {
     .token-box {
       width: 100%;
     }
+    .lottery-box {
+      flex-direction: column;
+      .timeline {
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 50px;
+      }
+      .place {
+        width: 100%;
+        max-width: 700px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .bay-token-content {
+      .icon-box {
+        flex-direction: row;
+      }
+    }
   }
   @media (max-width: 640px) {
     .token-box {
@@ -401,6 +658,47 @@ export default {
     }
     .completed-info {
       flex-direction: column;
+    }
+    .ul-step {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      &:after {
+        display: none;
+      }
+      li {
+        width: max-content;
+        .number {
+          height: 120px;
+          width: 120px;
+        }
+        p {
+          max-width: 80px;
+        }
+      }
+    }
+    .place-item-top {
+      flex-direction: column;
+      .button-primary {
+        margin: 25px 0;
+      }
+    }
+    .item-box {
+      flex-wrap: wrap;
+      .info-item {
+        margin-bottom: 25px;
+      }
+    }
+    .info-table {
+      .info-table__row {
+        flex-direction: column;
+        .item-table-name, .item-table-value {
+          width: 100%;
+        }
+        .item-table-value {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
     }
   }
 </style>
