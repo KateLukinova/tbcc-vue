@@ -1,7 +1,7 @@
 <template>
   <section class="buy-token-section">
     <div class="header">
-      <h2>Buy Token</h2>
+      <h2>Lottery</h2>
       <langSelect class="mobile-none"></langSelect>
     </div>
     <div class="place">
