@@ -265,20 +265,37 @@
           </div>
         </div>
       </div>
+      <div class="caption">Аллокация токенов</div>
+      <div class="circle-diagram">
+        <diagram @generated="setLegend" class="donut-diagram"></diagram>
+        <div class="legend-con" v-html="message"></div>
+      </div>
+      <div class="caption">Расписание выпуска токенов</div>
+      <ChartToken></ChartToken>
     </div>
   </section>
 </template>
 
 <script>
-export default {
+  import Diagram from "./Diagram.vue";
+  import ChartToken from "./ChartToken.vue";
 
-
-  data() {
-    return {
-
-    };
+  export default {
+    components: {
+      ChartToken,
+      Diagram
+    },
+    data() {
+      return {
+        message: ' '
+      }
+    },
+    methods: {
+      setLegend (html) {
+        this.message = html
+      }
+    }
   }
-};
 </script>
 
 <style lang="scss" scoped>
@@ -384,6 +401,7 @@ export default {
     color: #102724;
     margin: 0 20px;
     margin-left: 0;
+    margin-bottom: 20px;
     min-width: 120px;
     span {
       font-family: 'Montserrat-Regular', sans-serif;
@@ -432,6 +450,7 @@ export default {
         }
         .item-box {
           display: flex;
+          flex-wrap: wrap;
         }
       }
     }
@@ -582,6 +601,7 @@ export default {
   .info-table {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
     .info-table__row {
       display: flex;
       .item-table-name {
@@ -616,6 +636,15 @@ export default {
         background-color: rgba(40, 170, 154, 0.05);
       }
     }
+  }
+  .circle-diagram {
+    display: flex;
+    align-items: center;
+  }
+  .donut-diagram {
+    width: 200px;
+    height: 200px;
+    margin-right: 70px;
   }
 
   @media (max-width: 1200px) {

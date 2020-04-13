@@ -291,6 +291,33 @@ h2 {
   -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
 }
 
+.legend-con {
+  ul {
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat-Regular', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+      color: rgba(0, 0, 0, 0.8);
+      .chart-legend {
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        margin-right: 13px;
+      }
+      .chart-legend-label-text {
+        width: 220px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
 
 //index.html
 .main-wrapper {
