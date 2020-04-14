@@ -640,6 +640,7 @@
   .circle-diagram {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
   }
   .donut-diagram {
     width: 200px;
@@ -675,6 +676,14 @@
     .bay-token-content {
       .icon-box {
         flex-direction: row;
+      }
+    }
+    .circle-diagram {
+      flex-direction: column;
+      align-items: flex-start;
+      .donut-diagram {
+        margin-left: 0;
+        margin-bottom: 20px;
       }
     }
   }

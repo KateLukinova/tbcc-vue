@@ -58,9 +58,11 @@
           tooltips: {
             enabled: true,
             mode: 'single',
+            displayColors: false,
+            bodyFontSize: 15,
             callbacks: {
               label: function(tooltipItems, data) {
-                return data.datasets[0].labels[tooltipItems.index] + ' ' + data.datasets[0].data[tooltipItems.index] + '%';
+                return  data.datasets[0].data[tooltipItems.index] + '%' + data.datasets[0].labels[tooltipItems.index] ;
               }
             }
           }

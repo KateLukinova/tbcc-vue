@@ -18,17 +18,21 @@
     },
     mounted () {
       this.renderChart({
-
-          datasets: [{
-            labels: ['10', '11', '12', '13', '14'],
-            data: [10, 100, 80, 105, 47],
-            backgroundColor: [
-              "#7BDFFF"
-            ]
-          }]
+        labels: ['10', '11', '12', '13', '14', '15', '16'],
+        datasets: [
+          {
+            label: 'Data One',
+            backgroundColor: 'rgba(16, 16, 16, 0)',
+            borderColor: '#7BDFFF',
+            data: [40, 39, 10, 40, 39, 80, 40],
+            pointRadius: 3,
+            lineTension: 0,
+          }
+        ]
       }, {
           responsive: true,
-          maintainAspectRatio: false
+          maintainAspectRatio: false,
+
         });
     },
   }
