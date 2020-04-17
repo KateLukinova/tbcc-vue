@@ -146,6 +146,11 @@ export default {
   @media (max-width: 480px) {
     .place.sidebar {
       min-width: 100%;
+      padding: 15px;
+    }
+    .divider {
+      width: calc(100% + 30px);
+      margin-left: -15px;
     }
   }
 </style>

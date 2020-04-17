@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div id="chart-token">
-      <canvas id="myChartToken" height="100%" width="100%" ref="canvas"></canvas>
+    <div id="mini-chart">
+      <canvas id="my-mini-chart" height="100%" width="100%" ref="canvas"></canvas>
     </div>
   </div>
 </template>
@@ -21,12 +21,10 @@
         labels: ['10', '11', '12', '13', '14', '15', '16'],
         datasets: [
           {
-            label: 'Data One',
-            backgroundColor: 'rgba(16, 16, 16, 0)',
+            backgroundColor: 'rgba(123, 223, 255, 0.52)',
             borderColor: '#7BDFFF',
             data: [40, 39, 10, 40, 39, 80, 40],
-            pointRadius: 3,
-            lineTension: 0,
+            pointRadius: 0
           }
         ]
       }, {
@@ -34,7 +32,19 @@
           display: false
         },
           responsive: true,
-          maintainAspectRatio: false
+          maintainAspectRatio: false,
+        scales: {
+          xAxes: [{
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            }
+          }],
+          yAxes: [{
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            }
+          }]
+        }
         });
     },
   }
@@ -43,6 +53,6 @@
 <style lang="scss" scoped>
   #chart-token {
     width: 100%;
-    height: 250px;
+    height: 100px;
   }
 </style>

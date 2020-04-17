@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="chart">
-      <img src="../assets/img/chart.png" alt="">
+      <mini-chart></mini-chart>
     </div>
     <div class="info">
       <div class="value">94.53</div>
@@ -18,9 +18,13 @@
 </template>
 
 <script>
+  import MiniChart from "./MiniChart.vue";
+
 
 export default {
-
+  components: {
+    MiniChart
+  },
   data() {
     return {
 
@@ -59,9 +63,6 @@ export default {
   }
   .chart {
     width: 50%;
-    img {
-      width: 100%;
-    }
   }
   .info {
     display: flex;
