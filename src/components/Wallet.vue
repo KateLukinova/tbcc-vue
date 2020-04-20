@@ -757,14 +757,14 @@ export default {
     span {
       color: #818181;;
       font-size: 14px;
-      margin-top: 15px;
+      margin-bottom: 15px;
+
     }
     &::after {
       content: url("../assets/img/address.png");
       position: absolute;
       right: 20px;
-      top: 65px;
-      transform: translateY(-50%);
+      top: 33px;
     }
   }
 
@@ -838,11 +838,11 @@ export default {
 
   .input-box {
     width: 100%;
+    max-width: 400px;
     margin-bottom: 40px;
-    max-width: none;
     input, select, textarea {
       background: rgba(255, 255, 255, 0.1);
-      border: 1px solid #006B5E;
+      border: none;
       box-sizing: border-box;
       border-radius: 4px;
       font-family: 'Montserrat-Regular', sans-serif;
@@ -853,7 +853,8 @@ export default {
       display: flex;
       align-items: center;
       color: rgba(0, 107, 94, 0.7);
-      padding: 20px 30px;
+      padding: 0;
+      padding-right: 50px;
       &::placeholder {
         color: rgba(0, 107, 94, 0.7);
       }
@@ -962,6 +963,9 @@ export default {
         margin-bottom: 0;
         height: 10px;
       }
+    }
+    .table-settings ul.pagination {
+      display: none;
     }
   }
 </style>

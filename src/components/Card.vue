@@ -263,6 +263,10 @@ export default {
   }
   .btc-address {
     position: relative;
+   input {
+     padding-right: 60px;
+     text-overflow: ellipsis;
+   }
     span {
       color: #3FD045;
       font-size: 12px;
@@ -273,7 +277,7 @@ export default {
       position: absolute;
       right: 20px;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(-88%);
     }
   }
   .button-primary.button-modal {
