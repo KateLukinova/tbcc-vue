@@ -180,7 +180,7 @@
 
     <!--      wallet form-->
 
-    <div class="overlay" v-bind:class="{ active: showModalWalletForm }" @click="showModalWalletForm = false">
+    <div class="overlay" v-bind:class="{ active: showModalWalletForm }">
       <div class="modal" v-if="showModalWalletForm">
         <button class="modal-close" @click="showModalWalletForm = false">
           <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -869,6 +869,9 @@ export default {
       border: 1px solid #006b5e;
       padding: 10px;
       border-radius: 4px;
+      select {
+        padding-right: 15px;
+      }
     }
     .input-box-select {
       width: 25%;
