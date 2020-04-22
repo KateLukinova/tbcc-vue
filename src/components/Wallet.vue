@@ -865,6 +865,11 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    .input-box {
+      border: 1px solid #006b5e;
+      padding: 10px;
+      border-radius: 4px;
+    }
     .input-box-select {
       width: 25%;
     }
